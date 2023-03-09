@@ -7,16 +7,50 @@ Prior to using go install make sure that you have Go >=1.18 installed and proper
 
 The stable branch is the branch of the latest release.
 
-``
+```
 git clone https://github.com/0xPolygon/polygon-edge.git
 cd polygon-edge/
 go build -o polygon-edge main.go
 sudo mv polygon-edge /usr/local/bin
-``
+```
 
 ## Genesis
 
+Genesis file can get here: https://github.com/MetaViralBit/Genesis
+
+
 ## Staking
+
+Staking contract can find here
+
+```https://github.com/MetaViralBit/MetaViral-Staking-Contract/blob/master/contracts/Staking.sol```
+
+Step to staking
+1. Clone repo: https://github.com/MetaViralBit/MetaViral-Staking-Contract
+
+```
+git clone https://github.com/MetaViralBit/MetaViral-Staking-Contract.git
+```
+
+3. Create env from env.example
+
+```
+cp env.example env
+```
+
+4. Update validator private key, BLS key
+
+```JSONRPC_URL=https://mainnet-rpc.metaviralscan.com
+PRIVATE_KEYS=YOUR_NODE_VALIDATOR_PRIVATE_KEY
+BLS_PUBLIC_KEY=YOUR_NODE_VALIDATOR_BLS_KEY
+STAKING_CONTRACT_ADDRESS=0x0000000000000000000000000000000000001001
+MAX_VALIDATOR_COUNT=1000
+MIN_VALIDATOR_COUNT=3
+```
+5. Run stake
+
+```$ npm run stake```
+
 
 ## Working with node
 
