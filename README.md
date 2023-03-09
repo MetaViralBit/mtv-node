@@ -1,13 +1,24 @@
 Welcome to MetaViral Blockchain
 
 ---
-Getting Started
+## Getting Started
 
-Genesis
+Prior to using go install make sure that you have Go >=1.18 installed and properly configured.
 
-Staking
+The stable branch is the branch of the latest release.
 
-Working with node
+``
+git clone https://github.com/0xPolygon/polygon-edge.git
+cd polygon-edge/
+go build -o polygon-edge main.go
+sudo mv polygon-edge /usr/local/bin
+``
+
+## Genesis
+
+## Staking
+
+## Working with node
 
 
 ---
