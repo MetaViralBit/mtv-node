@@ -54,6 +54,7 @@ MIN_VALIDATOR_COUNT=3
 
 ## Working with node
 
+See more detail guide here: https://wiki.polygon.technology/docs/edge/get-started/set-up-ibft-on-the-cloud
 
 ---
 
