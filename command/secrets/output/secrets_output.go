@@ -23,7 +23,7 @@ func setFlags(cmd *cobra.Command) {
 		&params.dataDir,
 		dataDirFlag,
 		"",
-		"the directory for the Polygon Edge data if the local FS is used",
+		"the directory for the MTV  data if the local FS is used",
 	)
 
 	cmd.Flags().StringVar(
